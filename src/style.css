@@ -1,0 +1,55 @@
+:root{
+    --main-padding-size: 80px;
+}
+
+/* *{
+    outline: auto;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 var(--main-padding-size);
+}
+
+header > span{
+    color: gray;
+    font-size: 1.8em;
+    flex-shrink: 0;
+}
+
+nav{
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+button{
+    padding: 0;
+    font-family: inherit;
+    color: white;
+    background: none;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    color: rgb(175, 174, 174);
+}
+
+button:active{
+    color: rgb(73, 73, 73);
+}
+
