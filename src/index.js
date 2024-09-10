@@ -1,3 +1,4 @@
+import "./style.css";
 import home from "./home.js"
 import menu from "./menu.js"
 import about from "./about.js"
@@ -10,6 +11,9 @@ import about from "./about.js"
     navBar.addEventListener("click", handleClick);
 
     function handleClick(event){
+        if (event.target.tagName === "NAV"){
+            return;
+        }
         pageContent.removeChild(pageContent.firstElementChild);
         const newContent = event.target.id;
         switch (newContent) {
