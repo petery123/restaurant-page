@@ -1,15 +1,14 @@
 :root{
-    --main-padding-size: 80px;
+    --main-padding-size: clamp(50px, 10% ,300px);
 }
-
-/* *{
-    outline: auto;
-} */
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
 }
 
 header{
@@ -17,7 +16,7 @@ header{
     height: 55px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     padding: 0 var(--main-padding-size);
 }
 
@@ -53,3 +52,57 @@ button:active{
     color: rgb(73, 73, 73);
 }
 
+#content{
+    background-color: rgb(12, 12, 12);
+    padding-top: 50px;
+}
+
+#content > *{
+    margin: 0 var(--main-padding-size);
+    color: white;
+}
+
+.welcome{
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+    height: 600px;
+}
+
+img{
+    width: fit-content;
+    opacity: 40%;
+}
+
+img:hover{
+    opacity: 60%;
+}
+
+.rightSide{
+    max-width: 90ch;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rightSide h2{
+    font-size: 4em;
+    margin-block: 0;
+    color: rgb(216, 216, 216);
+}
+
+.rightSide p{
+    padding: 0;
+    margin: 0;
+    color: rgb(83, 90, 97);
+    position: relative;
+}
+
+.rightSide p::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(209, 63, 63);
+    height: 2px;
+    width: 120px;
+    top: 40px
+}
