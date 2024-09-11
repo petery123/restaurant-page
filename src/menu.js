@@ -34,6 +34,7 @@ export default (function(){
     catalogue.appendChild(createMenuItem('Akara', 'Fried bean cakes, crispy on the outside', 500));
     catalogue.appendChild(createMenuItem('Moi Moi', 'Steamed bean pudding with pepper and spices', 800));
 
+    menu.className = "menu"
     menu.append(head, catalogue);
     return menu;
 })();

@@ -12,7 +12,7 @@ export default (function(){
         welcomeHead.textContent = "IF IT IS NOT SPECTACULAR IT IS NOT SPAURTACUS";
 
         const moreInfo = document.createElement("p");
-        moreInfo.textContent = "Get some SPAURctacular fast food at Spaurtacus Restaurant. For those who love the taste of Nigerian Culture!"
+        moreInfo.textContent = "Get some mouth watering fast food at Spaurtacus Restaurant. For those who love the taste of Nigerian Culture!"
         
         const right = document.createElement("div");
         right.className = "rightSide";
