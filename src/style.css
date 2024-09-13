@@ -55,24 +55,27 @@ button:active{
 
 #content{
     background-color: rgb(12, 12, 12);
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #content > *{
-    margin: 0 var(--main-padding-size);
+    margin: var(--main-padding-size);
     color: white;
 }
 
 .welcome{
     display: flex;
+    flex-direction: column;
     align-items: stretch;
-    gap: 100px;
-    height: 600px;
+    gap: 80px;
+    height: min-content;
+    max-width: 1000px;
 }
 
 img{
-    width: fit-content;
     opacity: 40%;
+    width: 100%;
 }
 
 img:hover{
@@ -80,10 +83,10 @@ img:hover{
 }
 
 .rightSide{
-    max-width: 90ch;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
 }
 
 .rightSide h2{
@@ -104,8 +107,8 @@ img:hover{
     content: "";
     background-color: var(--red-color);
     height: 2px;
-    width: 120px;
-    top: 40px
+    width: 100%;
+    top: -30px
 }
 
 .catalogue{

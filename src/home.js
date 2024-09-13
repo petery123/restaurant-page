@@ -21,7 +21,7 @@ export default (function(){
         return right;
     })();
 
-    welcomeContent.append(jollofImg, rightSide);
+    welcomeContent.append(rightSide, jollofImg);
 
     return welcomeContent;
 })();
